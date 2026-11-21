@@ -1,0 +1,19 @@
+" Impede que o defaults.vim do Debian sobrescreva estas configuracoes
+let g:skip_defaults_vim = 1
+
+syntax on
+filetype plugin indent on
+set background=dark
+set showcmd
+set incsearch
+set number
+
+" Ativa a exibicao de caracteres ocultos/invisiveis
+set list
+
+" Configura os caracteres que representarao a indentacao e espacos
+set listchars=tab:··,lead:·,trail:•,extends:>,precedes:<
+
+" Define a cor cinza escuro para os pontos de indentacao e extensao de tela
+highlight SpecialKey ctermfg=239 guifg=#4b5263
+highlight NonText ctermfg=239 guifg=#4b5263
